@@ -264,9 +264,6 @@ public class MainActivity extends AppCompatActivity implements MainViewInterface
                 }
                 adapter.setMoviesData(results);
 
-            } else {
-
-                Toast.makeText(this, "You haven't added a movie as favourite", Toast.LENGTH_SHORT).show();
             }
         }
     }

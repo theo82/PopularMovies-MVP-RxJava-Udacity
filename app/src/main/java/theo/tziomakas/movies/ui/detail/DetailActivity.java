@@ -141,9 +141,6 @@ public class DetailActivity extends AppCompatActivity implements DetailViewIntef
             detailPresenter.getMovieTrailers();
             detailPresenter.getMovieReviews();
 
-            toggleButton.setText(null);
-            toggleButton.setTextOn(null);
-            toggleButton.setTextOff(null);
         }else{
 
 
@@ -182,7 +179,6 @@ public class DetailActivity extends AppCompatActivity implements DetailViewIntef
             detailPresenter.getMovieReviews();
 
 
-
         }
 
 
@@ -193,6 +189,9 @@ public class DetailActivity extends AppCompatActivity implements DetailViewIntef
     }
 
     public void setUpViews(){
+        toggleButton.setText(null);
+        toggleButton.setTextOn(null);
+        toggleButton.setTextOff(null);
 
         mLayoutManager = new LinearLayoutManager(this);
         trailersRecyclerView.setLayoutManager(mLayoutManager);
